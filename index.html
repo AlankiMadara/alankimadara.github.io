@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        .container { max-width: 600px; margin: auto; }
-        a { display: block; margin: 10px 0; }
-    </style>
+    <title>Alanki Megasuriya - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, I'm [Your Name]!</h1>
-        <p>Welcome to my portfolio website.</p>
-        <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
-        <a href="https://github.com/yourgithub">GitHub</a>
-    </div>
+
+    <header>
+        <h1>Alanki Megasuriya</h1>
+        <p>Undergraduate | University of Moratuwa</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Alanki Megasuriya, an undergraduate student at the University of Moratuwa. Passionate about technology, AI, and deep learning.</p>
+        <a href="https://www.linkedin.com/in/alanki-megasuriya-b94421251/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AlankiMadara" target="_blank">GitHub</a>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Detection of Acute Lymphoblastic Leukemia Using Deep Learning</h3>
+            <p>Using gene expression, blast cells, and chromosomes for leukemia detection with Explainable AI.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
 </body>
 </html>
-
