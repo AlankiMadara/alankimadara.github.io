@@ -6,6 +6,7 @@
     <title>Alanki Megasuriya - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -31,14 +32,14 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container text-center">
-            <h1 class="fade-in">Hi, I'm <span>Alanki Megasuriya</span></h1>
+            <h1 class="fade-in">Hi, I'm <span class="typed"></span></h1>
             <p class="fade-in">Undergraduate | University of Moratuwa | AI & Deep Learning Enthusiast</p>
             <a href="#projects" class="btn btn-light btn-lg fade-in">View Projects</a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container text-center py-5">
+    <section id="about" class="container text-center py-5" data-aos="fade-up">
         <h2>About Me</h2>
         <img src="images/profile.jpg" alt="Alanki Megasuriya" class="profile-img">
         <p>I'm an undergraduate at the University of Moratuwa, passionate about AI, machine learning, and deep learning.</p>
@@ -50,9 +51,9 @@
 
     <!-- Projects Section -->
     <section id="projects" class="container py-5">
-        <h2 class="text-center">Projects</h2>
+        <h2 class="text-center" data-aos="fade-up">Projects</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
                 <div class="project-card">
                     <img src="images/project1.jpg" alt="Leukemia Detection Project" class="project-img">
                     <h3>Leukemia Detection Using Deep Learning</h3>
@@ -63,7 +64,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container text-center py-5">
+    <section id="contact" class="container text-center py-5" data-aos="fade-up">
         <h2>Contact Me</h2>
         <form id="contactForm">
             <input type="text" id="name" class="form-control" placeholder="Your Name" required>
@@ -76,6 +77,16 @@
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        AOS.init();
+        new Typed('.typed', {
+            strings: ["Alanki Megasuriya", "AI Enthusiast", "Deep Learning Lover"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
 </html>
