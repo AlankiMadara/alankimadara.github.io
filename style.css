@@ -51,25 +51,57 @@ body {
     object-fit: cover;
 }
 
-/* Projects */
+/* Skills Section */
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
 .project-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    transition: transform 0.3s, background 0.3s;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
 .project-card:hover {
     transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
 }
 
 .project-img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+/* Experience Section */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 /* Contact Form */
@@ -94,16 +126,20 @@ body {
     background: #e6b800;
 }
 
-/* Social Links */
-.social-links .btn {
-    margin: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: #fff;
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
-.social-links .btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+    color: #ffd700;
 }
 
 /* Animations */
