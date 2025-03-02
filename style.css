@@ -41,6 +41,16 @@ body {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
 /* Projects */
 .project-card {
     background: rgba(255, 255, 255, 0.1);
@@ -54,6 +64,12 @@ body {
 .project-card:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.2);
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 /* Contact Form */
@@ -78,18 +94,6 @@ body {
     background: #e6b800;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Social Links */
 .social-links .btn {
     margin: 5px;
@@ -100,4 +104,16 @@ body {
 
 .social-links .btn:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
